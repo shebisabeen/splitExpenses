@@ -1,0 +1,393 @@
+{
+	"info": {
+		"_postman_id": "f0966d76-40e8-4059-a9bc-a16a772fc8ad",
+		"name": "splitExpenses",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12560929"
+	},
+	"item": [
+		{
+			"name": "create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Jishnu M\",\r\n    \"username\":\"jishnum\",\r\n    \"email\":\"jishnum@gmail.com\",\r\n    \"password\":\"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/splitExpenses/api/v1/users/createUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"splitExpenses",
+						"api",
+						"v1",
+						"users",
+						"createUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"shebi.456@gmail.com\",\r\n    \"password\":\"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/splitExpenses/api/v1/users/userLogin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"splitExpenses",
+						"api",
+						"v1",
+						"users",
+						"userLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/splitExpenses/api/v1/users/getUsers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"splitExpenses",
+						"api",
+						"v1",
+						"users",
+						"getUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get User by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/splitExpenses/api/v1/users/getUserById/63abeafac10ca",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"splitExpenses",
+						"api",
+						"v1",
+						"users",
+						"getUserById",
+						"63abeafac10ca"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create Group",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Group 4\",\r\n    \"description\":\"test Group expenses 4\",\r\n    \"createdBy\":\"63ac0ed9102a6\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/splitExpenses/api/v1/users/createGroup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"splitExpenses",
+						"api",
+						"v1",
+						"users",
+						"createGroup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all Groups",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/splitExpenses/api/v1/users/getGroups",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"splitExpenses",
+						"api",
+						"v1",
+						"users",
+						"getGroups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Group by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/splitExpenses/api/v1/users/getGroupById/63ac0f2930f21",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"splitExpenses",
+						"api",
+						"v1",
+						"users",
+						"getGroupById",
+						"63ac0f2930f21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create Group member",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\":\"63abe9bcec25c\",\r\n    \"groupId\":\"63ac0f2930f21\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/splitExpenses/api/v1/users/createGroupMember",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"splitExpenses",
+						"api",
+						"v1",
+						"users",
+						"createGroupMember"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Group Members by group id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/splitExpenses/api/v1/users/getMembersByGroup/63abef8faad9c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"splitExpenses",
+						"api",
+						"v1",
+						"users",
+						"getMembersByGroup",
+						"63abef8faad9c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create expense",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\":\"test  expense 1\",\r\n    \"groupId\":\"63abef8faad9c\",\r\n    \"amount\":650,\r\n    \"payer\":\"63abf8c739760\",\r\n    \"amountType\":\"number\",\r\n    \"splitUsers\":[\r\n        {\r\n            \"memberId\":\"63ae3f2b27ca0\",\r\n            \"amount\":\"100\"\r\n        },\r\n        {\r\n            \"memberId\":\"63abf5a590d16\",\r\n            \"amount\":\"100\"\r\n        },\r\n        {\r\n            \"memberId\":\"63abf8c739760\",\r\n            \"amount\":\"100\"\r\n        },\r\n        {\r\n            \"memberId\":\"63ae3eef042ec\",\r\n            \"amount\":\"100\"\r\n        },\r\n        {\r\n            \"memberId\":\"63ae3f0d0416d\",\r\n            \"amount\":\"100\"\r\n        },\r\n        {\r\n            \"memberId\":\"63ae3f1b4089b\",\r\n            \"amount\":\"150\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/splitExpenses/api/v1/users/createExpense",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"splitExpenses",
+						"api",
+						"v1",
+						"users",
+						"createExpense"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get expenses by group id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/splitExpenses/api/v1/users/getExpensesByGroup/63abef8faad9c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"splitExpenses",
+						"api",
+						"v1",
+						"users",
+						"getExpensesByGroup",
+						"63abef8faad9c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get expense details by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/splitExpenses/api/v1/users/getExpenseDetails/63ae401899632",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"splitExpenses",
+						"api",
+						"v1",
+						"users",
+						"getExpenseDetails",
+						"63ae401899632"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Balances by group id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/splitExpenses/api/v1/users/getBalances/63abef8faad9c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"splitExpenses",
+						"api",
+						"v1",
+						"users",
+						"getBalances",
+						"63abef8faad9c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get groups by user id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/splitExpenses/api/v1/users/getGroupsByUserId/63abe9bcec25c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"splitExpenses",
+						"api",
+						"v1",
+						"users",
+						"getGroupsByUserId",
+						"63abe9bcec25c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get stats by user id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/splitExpenses/api/v1/users/getUserStats/63abe9bcec25c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"splitExpenses",
+						"api",
+						"v1",
+						"users",
+						"getUserStats",
+						"63abe9bcec25c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
