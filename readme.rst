@@ -35,6 +35,6 @@ Database
 *******************
 Other Information
 *******************
- - PHP CodeIgniter
+ - PHP CodeIgniter 3
  - Xampp
  - Postman
