@@ -42,7 +42,12 @@ class Api_model extends CI_Model
                 ->where('password', $data['password'])
                 ->get()->result_array();
 
-            $response = array('status' => true, 'message' => 'User Logged in Successfully', 'userData' => $usersArray[0]);
+            $userCount = count($usersArray, 0);
+            if ($userCount == 1) {
+                $response = array('status' => true, 'message' => 'User Logged in Successfully', 'userData' => $usersArray[0]);
+            } else {
+                $response = array('status' => false, 'message' => 'Incorrect Login');
+            }
         } catch (Exception $e) {
             $response = array('status' => false, 'message' => 'Something Went Wrong');
         }

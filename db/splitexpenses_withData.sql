@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 31, 2022 at 07:59 AM
+-- Generation Time: Dec 31, 2022 at 08:53 AM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 7.3.29
 
@@ -129,17 +129,18 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`user_id`, `name`, `username`, `email`, `password`, `token`, `created_at`, `is_active`) VALUES
-('63abe9bcec25c', 'Sabeen CS', 'sabeencs', 'shebi.456@gmail.com', 'password', 'asefUDYcUyyDzv82iL5fcABpSorxat35', '2022-12-28 02:31:17', 1),
-('63abea290b083', 'Vishnu R', 'vishnur', 'vishnurnair@gmail.com', 'password', 'yjHpr0QVNdr1VnnttpcIj3o3OeUaBcTp', '2022-12-28 02:33:05', 1),
-('63abea9ddb761', 'Arjun S', 'arjuns', 'arjuns@gmail.com', 'password', '5cCVyXgEbTSulsR7h2jnoDV1c4WjLnK8', '2022-12-28 02:35:01', 1),
-('63abeaace82c1', 'Rishi', 'rishi', 'rishi@gmail.com', 'password', 'O9w5L9RY4eJw5MBwqHN2yO6zMpjjf89p', '2022-12-28 02:35:16', 1),
-('63abeac729c18', 'Arjun M', 'arjunm', 'arjunm@gmail.com', 'password', 'fJJR4tXYHC07duO9fMuWJfYt0NTyB6J2', '2022-12-28 02:35:43', 1),
-('63abead6ae69a', 'Irfan M', 'irfanm', 'irfanm@gmail.com', 'password', 'pHncjWEAob075ltb2pDNcKzs47Vxh4tx', '2022-12-28 02:35:58', 1),
-('63abeae617db7', 'Praveen', 'praveen', 'praveen@gmail.com', 'password', 'UP7plXG2tiUUfeOKdn0HX3ucZzKVGZLg', '2022-12-28 02:36:14', 1),
-('63abeafac10ca', 'Naseem F', 'naseemf', 'naseemf@gmail.com', 'password', 'ZPjXBvhcLr9111dCLrsUtKzbVC5TgKMb', '2022-12-28 02:36:34', 1),
-('63abeb1184a62', 'Fahad P', 'fahadp', 'fahadp@gmail.com', 'password', 'tbf1CoHbKiv8S9JTKhku0zOiPaCnj1CT', '2022-12-28 02:36:57', 1),
-('63ac089c01281', 'Rifas Ali', 'rifasa', 'rifasa@gmail.com', 'password', 'sKD6GkMjiBunGMrrbXDiFSck5RCTqBAc', '2022-12-28 04:43:00', 1),
-('63ac0ed9102a6', 'Jishnu M', 'jishnum', 'jishnum@gmail.com', 'password', 'EzCv2MCXxHbRy8zWPRB3e6vPMFiHhWS0', '2022-12-28 05:09:37', 1);
+('63abe9bcec25c', 'Sabeen CS', 'sabeencs', 'shebi.456@gmail.com', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'asefUDYcUyyDzv82iL5fcABpSorxat35', '2022-12-31 07:52:46', 1),
+('63abea290b083', 'Vishnu R', 'vishnur', 'vishnurnair@gmail.com', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'yjHpr0QVNdr1VnnttpcIj3o3OeUaBcTp', '2022-12-31 07:52:46', 1),
+('63abea9ddb761', 'Arjun S', 'arjuns', 'arjuns@gmail.com', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', '5cCVyXgEbTSulsR7h2jnoDV1c4WjLnK8', '2022-12-31 07:52:46', 1),
+('63abeaace82c1', 'Rishi', 'rishi', 'rishi@gmail.com', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'O9w5L9RY4eJw5MBwqHN2yO6zMpjjf89p', '2022-12-31 07:52:46', 1),
+('63abeac729c18', 'Arjun M', 'arjunm', 'arjunm@gmail.com', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'fJJR4tXYHC07duO9fMuWJfYt0NTyB6J2', '2022-12-31 07:52:46', 1),
+('63abead6ae69a', 'Irfan M', 'irfanm', 'irfanm@gmail.com', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'pHncjWEAob075ltb2pDNcKzs47Vxh4tx', '2022-12-31 07:52:46', 1),
+('63abeae617db7', 'Praveen', 'praveen', 'praveen@gmail.com', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'UP7plXG2tiUUfeOKdn0HX3ucZzKVGZLg', '2022-12-31 07:52:46', 1),
+('63abeafac10ca', 'Naseem F', 'naseemf', 'naseemf@gmail.com', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'ZPjXBvhcLr9111dCLrsUtKzbVC5TgKMb', '2022-12-31 07:52:46', 1),
+('63abeb1184a62', 'Fahad P', 'fahadp', 'fahadp@gmail.com', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'tbf1CoHbKiv8S9JTKhku0zOiPaCnj1CT', '2022-12-31 07:52:46', 1),
+('63ac089c01281', 'Rifas Ali', 'rifasa', 'rifasa@gmail.com', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'sKD6GkMjiBunGMrrbXDiFSck5RCTqBAc', '2022-12-31 07:52:46', 1),
+('63ac0ed9102a6', 'Jishnu M', 'jishnum', 'jishnum@gmail.com', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'EzCv2MCXxHbRy8zWPRB3e6vPMFiHhWS0', '2022-12-31 07:52:46', 1),
+('63afe8f859397', 'Amal', 'amal', 'amal@gmail.com', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 'cqDeeNf20ux94J3dk805JiQa6hcaszbV', '2022-12-31 03:17:04', 1);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -21,7 +21,7 @@ class Users extends CI_Controller
         $data['name'] = $inputData['name'];
         $data['username'] = $inputData['username'];
         $data['email'] = $inputData['email'];
-        $data['password'] = $inputData['password'];
+        $data['password'] = hash('sha256', $inputData['password']);
 
         $response =  $this->api_model->createUser($data);
 
@@ -35,7 +35,7 @@ class Users extends CI_Controller
         $inputData = json_decode(trim(file_get_contents('php://input')), true);
 
         $data['email'] = $inputData['email'];
-        $data['password'] = $inputData['password'];
+        $data['password'] = hash('sha256', $inputData['password']);
 
         $loginResponse =  $this->api_model->userLogin($data);
 
@@ -46,7 +46,11 @@ class Users extends CI_Controller
                 $response = array('status' => true, 'message' => 'User Logged in Successfully', 'userData' => $loginResponse['userData'],  'userStats' => $statsResponse['userStats']);
             }
         } else {
-            $response = array('status' => false, 'message' => 'Something went wrong on user login');
+            if ($loginResponse['message'] == 'Incorrect Login') {
+                $response = array('status' => false, 'message' => 'Incorrect Login Details');
+            } else {
+                $response = array('status' => false, 'message' => 'Something went wrong on user login');
+            }
         }
 
         header('Content-Type: application/json');
