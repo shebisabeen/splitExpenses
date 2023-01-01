@@ -31,6 +31,7 @@ Database
         1. database table structure only (splitexpenses_structureOnly.sql file)
         2. database table structure and sample data (splitexpenses_withData.sql file)
 
+    Password for every user in the sample data is "password".
 
 *******************
 Other Information
